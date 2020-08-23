@@ -1,0 +1,14 @@
+spring:
+# datasource 数据源配置内容
+  datasource:
+    url: jdbc:sqlserver://rm-bp10s88962104tky7qo.sqlserver.rds.aliyuncs.com;Databasename=multi_platform_intermediate_system
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: cy
+    password: Cqupt2019+
+
+# mybatis-plus 配置内容
+mybatis-plus:
+  configuration:
+      map-underscore-to-camel-case: true # 虽然默认为 true ，但是还是显示去指定下。
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: cc.oltremare.querydatawithsql.dataobject
